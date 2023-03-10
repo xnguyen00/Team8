@@ -25,7 +25,7 @@ app.post('/submit', (req, res) => {
     TOKEN: `./${name}.json`
   };
 //*TODO: CHANGE THIS TO ACTUAL FOLDER LOCATION *//
-  fs.readFile('/Users/xuan-huongnguyen/Desktop/Team8/MagicMirror/modules/MMM-Spotify/spotify.config.json', 'utf8', (err, jsonString) => {
+  fs.readFile('/home/pi/Team8/magicmirror/modules/MMM-Spotify', 'utf8', (err, jsonString) => {
     if (err) {
       console.log('Error reading file:', err);
       res.status(500).send('Error reading file');
@@ -39,7 +39,7 @@ app.post('/submit', (req, res) => {
 
     configData.push(data);
 //*TODO: CHANGE THIS TO ACTUAL FOLDER LOCATION *//
-    fs.writeFile('/Users/xuan-huongnguyen/Desktop/Team8/MagicMirror/modules/MMM-Spotify/spotify.config.json', JSON.stringify(configData), 'utf8', (err) => {
+    fs.writeFile('/home/pi/Team8/magicmirror/modules/MMM-Spotify', JSON.stringify(configData), 'utf8', (err) => {
       if (err) {
         console.log('Error writing file:', err);
         res.status(500).send('Error writing file');
