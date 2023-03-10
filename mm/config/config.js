@@ -102,17 +102,17 @@ let config = {
 				},
 			},
 		},
-		// {
-		// 	module: "weather",
-		// 	position: "top_right",
-		// 	config: {
-		// 		weatherProvider: "openweathermap",
-		// 		type: "current",
-		// 		location: "Los Angeles",
-		// 		locationID: "5368361", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-		// 		apiKey: "a70ad777aaaa27c1dc13b9a5baf4dc9c"
-		// 	}
-		// },
+		{
+			module: "weather",
+		 	position: "top_right",
+		 	config: {
+		 		weatherProvider: "openweathermap",
+		 		type: "current",
+		 		location: "Los Angeles",
+		 		locationID: "5368361", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+		 		apiKey: "a70ad777aaaa27c1dc13b9a5baf4dc9c"
+	 		}
+		},
 		{
 			module: 'MMM-SmartTouch', 
 			position: 'bottom_center',    // This can be any of the regions.(bottom-center Recommended)
