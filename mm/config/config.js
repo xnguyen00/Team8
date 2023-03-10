@@ -52,24 +52,17 @@ let config = {
 		},
 		{
 			module: "calendar",
-			header: "David's Calendar",
+			header: "Your Calendar",
 			position: "top_left",
 			config: {
 				fetchInterval: 1000,
 				calendars: [
-					/*
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"
-					},
-					
 					{
 						symbol: "Your Calendar",
-						url: "Use google calendar's secret address in iCal Format"
+						url: "https://calendar.google.com/calendar/ical/smartmirrorteam8%40gmail.com/private-e56f47f628729593a8349f0e4e728352/basic.ics"
 					},
-					*/
-				]
-			}
+				],
+			},
 		},
 		{
 			module: "compliments",
@@ -146,8 +139,8 @@ let config = {
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "Los Angeles Times",
+						url: "https://www.latimes.com/world-nation/rss2.0.xml#nt=0000016c-0bf3-d57d-afed-2fff84fd0000-1col-7030col1"
 					}
 				],
 				showSourceTitle: true,
